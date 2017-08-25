@@ -101,12 +101,14 @@
       <plugin>
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>1.8.4</version>
+        <version>1.9.54</version>
         <configuration>
           <jvmFlags>
             <jvmFlag>-Xdebug</jvmFlag>
             <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n</jvmFlag>
           </jvmFlags>
+          <port>8181</port>
+          <enableJarSplitting>true</enableJarSplitting>
         </configuration>
       </plugin>
       <plugin>
